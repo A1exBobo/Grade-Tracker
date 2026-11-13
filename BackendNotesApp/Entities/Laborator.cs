@@ -1,21 +1,14 @@
 using BackendNotesApp;
+using BackendNotesApp.Repositories;
 public class Laborator
 {
-    public int Id{get;set;}
-    public List<float>? NoteLaborator{get;set;}
+    private LaboratorRepo laboratorRepo = new LaboratorRepo();
+    private int _ID;
+    private float _notaProiect;
+    private float _notaSeminar;
+    private int _pondereSeminar;
 
-    public float NotaProiect{get;set;}
-    public int PondereProiect{get;set;}
-    public float NotaSeminar{get;set;}
-    public int PondereSeminar{get;set;}
-
-    public Laborator(int id,float notaProiect,int pondereProiect, float notaSeminar,int pondereSeminar)
+    public Laborator()
     {
-        Id = id;
-        NotaProiect = notaProiect;
-        PondereProiect = pondereProiect ;
-        NotaSeminar = notaSeminar;
-        PondereSeminar = pondereSeminar;
     }
-
 }

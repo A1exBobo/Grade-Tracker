@@ -1,22 +1,15 @@
 
+using BackendNotesApp.Repositories;
+
 public class Materie
 {
-    public int Id{get;set;}
-    public string Nume{get;set;}
+    private MaterieRepo _materieRepo = new MaterieRepo();
 
-    public int NumarCredite{get;set;}
-    public float PondereCurs{get;set;}
-    public Curs Curs;
-    public Laborator Laborator;
+    //private string _nume;
+    private int _nrCredite;
+    private int _podereCurs;
 
-    public Materie(int id,string nume,int numarCredite,float pondereCurs,Curs curs,Laborator laborator)
+    public Materie()
     {
-        Id = id;
-        Nume = nume;
-        NumarCredite = numarCredite;
-        PondereCurs = pondereCurs;
-        Curs = curs;
-        Laborator = laborator;
     }
-
 }

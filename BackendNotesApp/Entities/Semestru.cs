@@ -1,11 +1,22 @@
+using BackendNotesApp.Repositories;
+
 public class Semestru
 {
-   int Id;
-   public List<Materie> Materii { get; set; } = [];
+   private SemestruRepo semestruRepo = new SemestruRepo();
+   private int _ID;
+   private int _numar;
 
-   public Semestru(int id,List<Materie> materii)
-   {
-      Id = id;
-      Materii = materii;
-   }
+    public Semestru()
+    {
+    }
+
+
+
+    //semestruRepo.insert(1)
+    //semestru repo insert(2)
+
+
+
+
+
 }
