@@ -1,6 +1,10 @@
+using System;
+
+namespace BackendNotesApp.Repositories;
+
 public interface IRepository
 {
-    public void Save(object T)
+     public void Save(object T)
     {
         
     }
@@ -19,4 +23,5 @@ public interface IRepository
     {
         
     }
+
 }
