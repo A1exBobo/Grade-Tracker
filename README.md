@@ -1,4 +1,4 @@
-# Grade-Tracker
+# MyGrades
 Aplicatie de gestionare a notelor 
 
 ## Schema bazei de date
