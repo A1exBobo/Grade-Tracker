@@ -1,17 +1,14 @@
 using System.Data.Common;
 using BackendNotesApp;
+using BackendNotesApp.Repositories;
 public class Curs
 {
-    public int Id {get;set;}
-    public bool AreDistribuita {get;set;}
+    private CursRepo _cursRepo = new CursRepo();
 
-    public List<float> Distribuita1 {get; set;} = [];
-    public List<float> Distribuita2 {get; set;} = [];
+    private int _ID;
+    private bool _AreDistribuita;
 
-    public Curs(int id,bool areDistribuita)
+    public Curs()
     {
-        Id = id;
-        AreDistribuita = areDistribuita;
     }
-
 }

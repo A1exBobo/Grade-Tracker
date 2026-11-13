@@ -2,7 +2,9 @@ using System;
 
 namespace BackendNotesApp.Repositories;
 
-public class Distribuita
+public class DistribuitaRepo
 {
+    public DistribuitaRepo(){}
+
 
 }
